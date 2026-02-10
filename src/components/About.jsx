@@ -26,7 +26,7 @@ const About = () => {
                     <div className="relative z-10 rounded-[30px] sm:rounded-[40px] overflow-hidden border-[6px] sm:border-[10px] border-primary/20 p-1 sm:p-2">
                         <div className="rounded-[24px] sm:rounded-[30px] overflow-hidden border-2 sm:border-4 border-primary h-[350px] sm:h-[600px]">
                             <img
-                                src="/profile.png"
+                                src="/profile2.png"
                                 alt="Eric Stephen"
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                             />
