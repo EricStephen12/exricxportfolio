@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8b5cf6;
+  --color-dark: #1a1a1a;
+  --color-darker: #0d0d0d;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply font-body bg-darker text-white antialiased overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+  }
+
+  .glow-primary-lg {
+    box-shadow: 0 0 40px rgba(0, 123, 255, 0.6);
+  }
+}
