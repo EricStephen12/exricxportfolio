@@ -44,14 +44,6 @@ const PortfolioGrid = () => {
             image: '/project5.jpg',
             link: 'https://yutakafarmsandco.com.ng/'
         },
-        {
-            id: 6,
-            title: 'Interior Black',
-            category: 'Design Showcase',
-            description: 'Sleek and minimal design portfolio focusing on interior aesthetics and UX.',
-            image: '/project6.jpg',
-            link: 'https://interior-black.vercel.app/'
-        },
     ];
 
     return (

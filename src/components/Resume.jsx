@@ -18,13 +18,6 @@ const Resume = () => {
             description: 'Delivered websites and applications for real businesses, focusing on performance, responsiveness, and scalability.'
         },
         {
-            company: 'Christ Embassy',
-            role: 'Software Engineer',
-            year: '2024 - PRESENT',
-            icon: Briefcase,
-            description: 'Currently working on internal platforms and digital solutions to support organizational operations.'
-        },
-        {
             company: 'National Institute of Information Technology (NIIT)',
             role: 'Software Engineering & Full-Stack Development',
             year: '2021 - 2023',
