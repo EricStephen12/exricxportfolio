@@ -4,25 +4,39 @@ import { Briefcase, GraduationCap, Code, Download, ArrowRight } from 'lucide-rea
 const Resume = () => {
     const experiences = [
         {
-            company: 'Exricx (Personal Company)',
-            role: 'Founder & Software Engineer',
-            year: '2022 - PRESENT',
+            company: 'Exricx — Personal Company',
+            role: 'Founder & Full-Stack Engineer',
+            year: '2022 – PRESENT',
             icon: Code,
-            description: 'Built and managed multiple web and mobile projects for clients and personal products, handling frontend, backend, deployment, and maintenance.'
+            description: 'Built and shipped multiple production web and mobile applications for real clients across e-commerce, real estate, agriculture, and creative industries. Handled architecture, development, and deployment end-to-end.'
         },
         {
-            company: 'Client Projects (Idabo, Smart Best Brand, Yutaka Farms, Onyibest)',
-            role: 'Full-Stack Software Engineer',
-            year: '2023 - PRESENT',
+            company: 'TaskClarify — Personal Product',
+            role: 'Full-Stack Engineer (Backend + Mobile)',
+            year: '2024 – PRESENT',
+            icon: Code,
+            description: 'Built a complete task management system with React Native mobile app (Android & iOS) and a Node.js/Next.js backend API. Implemented JWT auth, RBAC, Supabase (PostgreSQL), and REST API endpoints for third-party integrations.'
+        },
+        {
+            company: 'FurniLux (Smart Best Brand) — Paid Client',
+            role: 'Full-Stack Engineer',
+            year: '2023 – 2024',
             icon: Briefcase,
-            description: 'Delivered websites and applications for real businesses, focusing on performance, responsiveness, and scalability.'
+            description: 'Built a full luxury furniture e-commerce platform with Next.js, TypeScript, Supabase (PostgreSQL), and Prisma ORM. Implemented product catalogue, cart, wishlist, filtering, and deployed to Vercel.'
+        },
+        {
+            company: 'Yutaka Farm, Oyibest Properties, Studio Metavuz — Paid Clients',
+            role: 'Full-Stack Engineer',
+            year: '2023 – 2024',
+            icon: Briefcase,
+            description: 'Delivered professional business websites for paying clients — farm business, real estate listings, and creative studio. Built with Next.js, TypeScript, and Node.js email APIs. All deployed to Vercel.'
         },
         {
             company: 'National Institute of Information Technology (NIIT)',
-            role: 'Software Engineering & Full-Stack Development',
-            year: '2021 - 2023',
+            role: 'Diploma — Software Engineering',
+            year: 'Feb 2023 – Jul 2025',
             icon: GraduationCap,
-            description: 'Completed formal training in software development with additional hands-on workshops and practical projects.'
+            description: 'Formal training in software engineering and full-stack development at NIIT, Wuse, FCT Abuja, Nigeria.'
         }
     ];
 

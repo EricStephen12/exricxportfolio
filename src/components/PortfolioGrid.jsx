@@ -6,43 +6,51 @@ const PortfolioGrid = () => {
     const projects = [
         {
             id: 1,
-            title: 'Smart Best Brand',
-            category: 'E-Commerce Platform',
-            description: 'A modern e-commerce storefront focusing on premium branding and seamless user flow.',
+            title: 'TaskClarify',
+            category: 'Full-Stack · Backend + Mobile',
+            description: 'Task management system with React Native mobile app (Android & iOS) and Node.js/Next.js backend. JWT auth, RBAC, Supabase (PostgreSQL).',
             image: '/project1.jpg',
-            link: 'https://smart-best-brand.vercel.app/'
+            link: 'https://taskclarify-backend.vercel.app/'
         },
         {
             id: 2,
-            title: 'ConvertFlow',
-            category: 'Web Application',
-            description: 'Custom conversion-focused web platform built for high-performance marketing.',
+            title: 'FurniLux (Smart Best Brand)',
+            category: 'E-Commerce · Paid Client',
+            description: 'Luxury furniture e-commerce platform. Next.js, TypeScript, Supabase, Prisma ORM — product catalogue, cart, wishlist, and Vercel deployment.',
             image: '/project2.jpg',
-            link: 'https://convertflowcom.vercel.app/'
+            link: 'https://smart-best-brand.vercel.app/'
         },
         {
             id: 3,
-            title: 'Studio Metavuz',
-            category: 'Creative Agency',
-            description: 'Bold and interactive portfolio for a design studio, featuring smooth animations.',
+            title: 'Yutaka Farm',
+            category: 'Business Website · Paid Client',
+            description: 'Professional farm business website with contact and wholesale inquiry forms. Node.js email API with Gmail App Password auth.',
             image: '/project3.jpg',
-            link: 'https://www.studiometavuz.com/'
+            link: 'https://yutaka-farm.vercel.app/'
         },
         {
             id: 4,
-            title: 'Onyibest Properties',
-            category: 'Real Estate Platform',
-            description: 'Scalable properties listing and management platform for real estate businesses.',
+            title: 'Oyibest Properties',
+            category: 'Real Estate · Paid Client',
+            description: 'Real estate listing and showcase website with responsive property pages, filtering, and client inquiry functionality.',
             image: '/project4.jpg',
             link: 'https://www.onyibestproperties.com.ng/'
         },
         {
             id: 5,
-            title: 'Yutaka Farms',
-            category: 'Agricultural Business',
-            description: 'Digital presence for an agricultural hub, connecting farming with modern tech.',
+            title: 'Studio Metavuz',
+            category: 'Creative Agency · Paid Client',
+            description: 'Full creative studio website — requirements, development, and deployment delivered for a paying client.',
             image: '/project5.jpg',
-            link: 'https://yutakafarmsandco.com.ng/'
+            link: 'https://www.studiometavuz.com/'
+        },
+        {
+            id: 6,
+            title: 'FussionFlux',
+            category: 'Full-Stack · TypeScript',
+            description: 'Full-stack TypeScript web application — personal project showcasing modern full-stack architecture.',
+            image: '/project6.jpg',
+            link: 'https://convertflowcom.vercel.app/'
         },
     ];
 

@@ -29,9 +29,9 @@ const CountUp = ({ end, duration = 2 }) => {
 
 const Statistics = () => {
     const stats = [
-        { label: 'Projects Delivered', value: 15 },
-        { label: 'Active & Past Clients', value: 6 },
-        { label: 'Side Projects & Experiments', value: 20 },
+        { label: 'Paid Client Projects', value: 6 },
+        { label: 'Years of Experience', value: 3 },
+        { label: 'Technologies Mastered', value: 20 },
     ];
 
     return (

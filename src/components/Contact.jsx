@@ -65,8 +65,8 @@ const Contact = () => {
 
                     <div className="mt-12 flex justify-center space-x-6">
                         {[
-                            { icon: Mail, href: 'mailto:eric@exricx.tech' },
-                            { icon: Github, href: 'https://github.com/exricx' },
+                            { icon: Mail, href: 'mailto:eracissebeauty@gmail.com' },
+                            { icon: Github, href: 'https://github.com/EricStephen12' },
                             { icon: Linkedin, href: '#' },
                             { icon: Twitter, href: '#' },
                         ].map((social, index) => {

@@ -3,10 +3,10 @@ import { Check } from 'lucide-react';
 
 const Skills = () => {
     const skillsList = [
-        "Web application development",
-        "Mobile app development",
-        "Backend logic & APIs",
-        "Deployment & maintenance"
+        "Backend: Node.js, Express.js, REST APIs, JWT Auth, RBAC",
+        "Databases: PostgreSQL, MySQL, MongoDB, Prisma, Supabase",
+        "Mobile: React Native (Android & iOS), Expo, EAS Build",
+        "Deployment: Vercel, Railway, Hostinger, Bluehost"
     ];
 
     return (
@@ -84,35 +84,35 @@ const Skills = () => {
                         {/* Web Development Bar */}
                         <div className="space-y-4">
                             <div className="bg-primary text-white text-center py-3 rounded-full font-heading font-bold text-lg shadow-lg shadow-primary/20">
-                                Web Development
+                                Backend & APIs
                             </div>
                             <div className="text-center">
-                                <span className="text-4xl font-heading font-bold text-white">88 %</span>
+                                <span className="text-4xl font-heading font-bold text-white">90 %</span>
                             </div>
                             <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                                 <motion.div
                                     className="h-full bg-primary"
                                     initial={{ width: 0 }}
-                                    whileInView={{ width: '88%' }}
+                                    whileInView={{ width: '90%' }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 1.5, ease: "easeOut" }}
                                 />
                             </div>
                         </div>
 
-                        {/* Mobile & Backend Bar */}
+                        {/* Frontend & Mobile Bar */}
                         <div className="space-y-4">
                             <div className="bg-primary text-white text-center py-3 rounded-full font-heading font-bold text-lg shadow-lg shadow-primary/20">
-                                Mobile & Backend
+                                Frontend & Mobile
                             </div>
                             <div className="text-center">
-                                <span className="text-4xl font-heading font-bold text-white">78 %</span>
+                                <span className="text-4xl font-heading font-bold text-white">85 %</span>
                             </div>
                             <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                                 <motion.div
                                     className="h-full bg-primary"
                                     initial={{ width: 0 }}
-                                    whileInView={{ width: '78%' }}
+                                    whileInView={{ width: '85%' }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 1.5, ease: "easeOut" }}
                                 />

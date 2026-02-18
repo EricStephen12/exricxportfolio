@@ -6,44 +6,44 @@ const Services = () => {
         {
             id: '01',
             title: 'Full-Stack Web Development',
-            description: 'End-to-end development of modern, scalable web applications using React, Next.js, and Node.js.',
+            description: 'End-to-end web apps with React, Next.js, TypeScript, Node.js, and PostgreSQL — from architecture to Vercel deployment.',
             icon: Monitor,
             action: 'Learn More'
         },
         {
             id: '02',
             title: 'Mobile App Development',
-            description: 'Cross-platform mobile apps using Expo (React Native) and native Android development with Kotlin.',
+            description: 'Cross-platform Android & iOS apps with React Native and Expo. EAS Build for production distribution.',
             icon: Smartphone,
             action: 'View Details'
         },
         {
             id: '03',
-            title: 'Frontend Development',
-            description: 'Responsive and clean UI development from designs or ideas, focusing on performance and user experience.',
-            icon: Layout,
-            action: 'See Work'
-        },
-        {
-            id: '04',
             title: 'Backend & API Development',
-            description: 'Secure backend systems, RESTful APIs, and database integration using Node.js and Firebase.',
+            description: 'Secure REST APIs with Node.js, Express, JWT auth, RBAC, input validation, PostgreSQL, MongoDB, and Prisma ORM.',
             icon: Code,
             action: 'Explore'
         },
         {
+            id: '04',
+            title: 'Database Design',
+            description: 'Schema design and modelling with PostgreSQL, MySQL, MongoDB, Supabase, Prisma, and Sequelize.',
+            icon: Layout,
+            action: 'See Work'
+        },
+        {
             id: '05',
-            title: 'MVP & Startup Builds',
-            description: 'Rapid development of MVPs to test and launch startup ideas fast, focusing on core value propositions.',
+            title: 'Payment Integration',
+            description: 'Paystack and Flutterwave payment gateway integration for e-commerce and subscription platforms.',
             icon: Globe,
-            action: 'Build MVP'
+            action: 'Build Now'
         },
         {
             id: '06',
-            title: 'Website Revamp & Optimization',
-            description: 'Improving performance, SEO, and user experience of existing sites to boost ranking and engagement.',
+            title: 'Firebase & Cloud Services',
+            description: 'Firebase Realtime Database, Firestore, FCM push notifications, Firebase Auth, and full deployment pipeline.',
             icon: Palette,
-            action: 'Optimize'
+            action: 'Get Started'
         }
     ];
 

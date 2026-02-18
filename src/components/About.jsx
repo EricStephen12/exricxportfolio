@@ -3,12 +3,12 @@ import { Play } from 'lucide-react';
 
 const About = () => {
     const details = [
-        { label: 'Name :', value: 'Eric Amobichukwu Amaechi Stephen' },
+        { label: 'Name :', value: 'Eric Stephen' },
         { label: 'Experience Level :', value: 'Mid-Level Software Engineer' },
-        { label: 'Development Proficiency :', value: 'Full-Stack & Mobile Development' },
-        { label: 'Tech Stack :', value: 'React | Next.js | Tailwind CSS | Node.js | Firebase | Expo | Kotlin' },
-        { label: 'Hobbies :', value: 'Building side projects, automation, learning new technologies' },
-        { label: 'Email ID :', value: 'eric@exricx.tech' },
+        { label: 'Development Proficiency :', value: 'Full-Stack, Backend & Mobile' },
+        { label: 'Tech Stack :', value: 'Node.js · React · Next.js · React Native · PostgreSQL · Firebase' },
+        { label: 'Location :', value: 'Abuja, Nigeria (Remote Available)' },
+        { label: 'Email ID :', value: 'eracissebeauty@gmail.com' },
     ];
 
     return (
@@ -63,10 +63,10 @@ const About = () => {
                             About Me
                         </span>
                         <h2 className="text-3xl sm:text-5xl font-heading font-bold text-white leading-tight mb-6">
-                            3+ Years of Practical <br className="hidden sm:block" /> Software Development Experience
+                            3+ Years Building Production <br className="hidden sm:block" /> Applications for Real Clients
                         </h2>
                         <p className="text-gray-400 text-lg font-body leading-relaxed max-w-xl">
-                            I’m a hands-on software engineer focused on building production-ready web and mobile applications. My experience comes from real client work, company projects, workshops, and running multiple side projects—learning by shipping, fixing, and improving real systems.
+                            Full-Stack Engineer with a strong backend focus — Node.js, Express, REST API design, JWT auth, RBAC, PostgreSQL, MongoDB, and Prisma. Experienced in React, React Native (Android & iOS), Next.js, TypeScript, and the full Firebase suite. Delivered multiple paid freelance projects end-to-end, from architecture to deployment.
                         </p>
                     </div>
 

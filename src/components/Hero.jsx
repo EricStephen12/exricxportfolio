@@ -111,7 +111,7 @@ const Hero = () => {
 
             <div className="absolute right-6 bottom-10 hidden lg:block z-10">
                 <p className="text-gray-500 text-xs font-heading tracking-[0.3em] uppercase vertical-text">
-                    eric@exricx.tech
+                    eracissebeauty@gmail.com
                 </p>
                 <div className="w-[1px] h-20 bg-gray-700 mx-auto mt-4"></div>
             </div>
@@ -149,10 +149,10 @@ const Hero = () => {
                         transition={{ delay: 0.5 }}
                     >
                         <p className="text-gray-200 text-xl font-heading font-bold leading-tight">
-                            Full-Stack & Mobile Software Engineer
+                            Full-Stack Engineer  •  Backend Specialist  •  Mobile Developer
                         </p>
                         <p className="text-gray-400 text-lg sm:text-xl font-body leading-relaxed">
-                            I build real-world web and mobile applications using modern technologies, ship fast, and learn by executing ideas into working products.
+                            3+ years building and deploying production applications for real clients. Strong backend focus — Node.js, REST APIs, PostgreSQL, Firebase — with full-stack and mobile delivery.
                         </p>
                     </motion.div>
 
@@ -208,7 +208,7 @@ const Hero = () => {
             {/* Social Links sidebar */}
             <div className="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col gap-8 hidden lg:flex z-20">
                 {[
-                    { Icon: Github, href: "https://github.com/exricx" },
+                    { Icon: Github, href: "https://github.com/EricStephen12" },
                     { Icon: Twitter, href: "#" },
                     { Icon: Linkedin, href: "#" },
                     { Icon: Instagram, href: "#" },
