@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Resume from './components/Resume';
+import Team from './components/Team';
 import Process from './components/Process';
 import Skills from './components/Skills';
 import PortfolioGrid from './components/PortfolioGrid';
@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Resume />
+      <Team />
       <Services />
       <Process />
       <Skills />

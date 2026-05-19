@@ -29,49 +29,58 @@ const CountUp = ({ end, duration = 2 }) => {
 
 const Statistics = () => {
     const stats = [
-        { label: 'Paid Client Projects', value: 6 },
-        { label: 'Years of Experience', value: 3 },
-        { label: 'Technologies Mastered', value: 20 },
+        { label: 'CLIENT APPLICATIONS SHIPPED', value: 15 },
+        { label: 'YEARS COMBINED EXPERIENCE', value: 6 },
+        { label: 'INTEGRATED CLOUD SERVICE APIS', value: 30 },
     ];
 
     return (
-        <section className="py-24 px-4 sm:px-8 lg:px-16 bg-primary relative overflow-hidden">
-            {/* World Map Background (Simulated with dots) */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none"
+        <section className="py-28 px-6 sm:px-12 lg:px-20 bg-darker relative overflow-hidden">
+            {/* Elegant luxury line divider */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] luxury-line-h"></div>
+
+            {/* Subtle premium dot grid background */}
+            <div className="absolute inset-0 opacity-5 pointer-events-none"
                 style={{
-                    backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
-                    backgroundSize: '20px 20px'
+                    backgroundImage: 'radial-gradient(circle, #c5a880 1px, transparent 1px)',
+                    backgroundSize: '30px 30px'
                 }}>
             </div>
 
-            <div className="max-w-7xl mx-auto relative z-10 text-center">
-                <motion.h2
-                    className="text-4xl sm:text-5xl font-heading font-bold text-white mb-16"
+            <div className="max-w-7xl mx-auto relative z-10 text-center space-y-20">
+                <motion.div 
+                    className="space-y-4"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
+                    transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    Built Through <br />
-                    <span className="relative inline-block mt-2">
-                        Real Projects
-                        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-white rounded-full"></div>
+                    <span className="editorial-label">
+                        THE NUMBERS
                     </span>
-                </motion.h2>
+                    <h2 className="text-4xl sm:text-5xl font-heading font-light text-white">
+                        Proven Delivery <br />
+                        <span className="italic text-gradient-gold">For Real Clients</span>
+                    </h2>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                {/* Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
                     {stats.map((stat, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
+                            initial={{ opacity: 0, y: 25 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.2 }}
-                            className="flex flex-col items-center"
+                            transition={{ delay: index * 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                            className={`flex flex-col items-center justify-center p-8 ${
+                                index !== 2 ? 'md:border-r md:border-gold/10' : ''
+                            }`}
                         >
-                            <h3 className="text-4xl sm:text-6xl font-heading font-bold text-white mb-2 sm:mb-4">
-                                <CountUp end={stat.value} />
+                            <h3 className="text-5xl sm:text-7xl font-heading font-light text-gold mb-4 tracking-tighter">
+                                <CountUp end={stat.value} />+
                             </h3>
-                            <p className="text-white/80 font-body text-lg uppercase tracking-wider">
+                            <p className="text-gray-400 font-subheading text-[10px] tracking-[0.25em] font-light max-w-[200px] text-center">
                                 {stat.label}
                             </p>
                         </motion.div>

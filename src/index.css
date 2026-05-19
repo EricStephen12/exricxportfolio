@@ -1,11 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #8b5cf6;
-  --color-dark: #1a1a1a;
-  --color-darker: #0d0d0d;
-  --font-heading: "Poppins", sans-serif;
-  --font-body: "Roboto", sans-serif;
+  --color-primary: #c5a880; /* Champagne Gold */
+  --color-secondary: #e2d4c9; /* Soft Alabaster */
+  --color-accent: #a78bfa; /* Soft Violet Accent */
+  --color-dark: #0d0d0d; /* Pure Obsidian */
+  --color-darker: #050505; /* Deep Black */
+  --color-gold: #c5a880;
+  --color-gold-light: #dfcfbe;
+  --color-gold-dark: #8c7355;
+  --font-heading: "Cormorant Garamond", serif;
+  --font-subheading: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
 @layer base {
@@ -13,28 +19,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body {
     @apply font-body bg-darker text-white antialiased overflow-x-hidden;
+    /* Soft luxurious lighting */
+    background-image: 
+      radial-gradient(at 10% 10%, rgba(197, 168, 128, 0.04) 0px, transparent 40%),
+      radial-gradient(at 90% 90%, rgba(197, 168, 128, 0.03) 0px, transparent 40%);
+    background-attachment: fixed;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-heading;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-wide font-light;
+  }
+
+  /* Thin elegant lines scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1c1c1c;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c5a880;
   }
 }
 
 @layer utilities {
-  .glow-primary {
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+  /* High-end Editorial Gradients */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #dfcfbe 0%, #c5a880 50%, #8c7355 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .glow-primary-lg {
-    box-shadow: 0 0 40px rgba(0, 123, 255, 0.6);
+  .text-gradient-editorial {
+    background: linear-gradient(180deg, #ffffff 30%, #a3a3a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Perfume bottle label effect (High-end minimalist border & typography) */
+  .editorial-label {
+    @apply border border-gold/30 px-6 py-2 uppercase tracking-[0.25em] font-subheading text-[10px] text-gold font-light inline-block bg-darker/60 backdrop-blur-sm;
+  }
+
+  /* Luxury editorial layout boxes */
+  .editorial-card {
+    background: rgba(13, 13, 13, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 168, 128, 0.08);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .editorial-card:hover {
+    border-color: rgba(197, 168, 128, 0.35);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 30px rgba(197, 168, 128, 0.05);
+    transform: translateY(-4px);
+  }
+
+  /* Luxury glow */
+  .glow-gold {
+    box-shadow: 0 0 30px rgba(197, 168, 128, 0.15);
+  }
+
+  .glow-gold-lg {
+    box-shadow: 0 0 50px rgba(197, 168, 128, 0.25);
+  }
+
+  /* Editorial thin lines styling */
+  .luxury-line-v {
+    width: 1px;
+    background: linear-gradient(180deg, rgba(197, 168, 128, 0) 0%, rgba(197, 168, 128, 0.2) 50%, rgba(197, 168, 128, 0) 100%);
+  }
+
+  .luxury-line-h {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(197, 168, 128, 0) 0%, rgba(197, 168, 128, 0.25) 50%, rgba(197, 168, 128, 0) 100%);
   }
 }
