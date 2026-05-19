@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
