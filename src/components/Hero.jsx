@@ -1,14 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, useSpring, useMotionValue } from 'framer-motion';
 import { ArrowRight, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
-
-const atoms = [...Array(40)].map((_, i) => ({
-    id: i,
-    x: (i * 7.7) % 100,
-    y: (i * 13.3) % 100,
-    size: ((i * 0.7) % 2.5) + 1.5,
-    speed: ((i * 1.9) % 8) + 6,
-}));
 
 const Hero = () => {
     const sectionRef = useRef(null);
@@ -32,6 +24,15 @@ const Hero = () => {
         return () => window.removeEventListener('mousemove', handleMouseMove);
     }, [mouseX, mouseY]);
 
+    const atoms = useMemo(() => {
+        return [...Array(40)].map((_, i) => ({
+            id: i,
+            x: Math.random() * 100,
+            y: Math.random() * 100,
+            size: Math.random() * 2.5 + 1.5,
+            speed: Math.random() * 8 + 6,
+        }));
+    }, []);
 
     return (
         <section
